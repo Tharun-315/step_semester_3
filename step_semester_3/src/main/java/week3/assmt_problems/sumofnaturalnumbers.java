@@ -1,4 +1,21 @@
-package week3.assmt_problems;
+import java.util.Scanner;
+class sumofnaturalnumbers {
+    static void sumOfNaturalNumbers(int n) {
+        int sum = 0;
+        int i = 1;
 
-public class sumofnaturalnumbers {
+        while (i <= n) {
+            sum = sum + i;
+            i++;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter N: ");
+        int n = sc.nextInt();
+        sumOfNaturalNumbers(n);
+    }
 }

@@ -1,4 +1,18 @@
-package week3.assmt_problems;
+import java.util.Scanner;
+class positivenegative0 {
+    static void classifyNumber(int number) {
+        if (number > 0)
+            System.out.println("Positive");
+        else if (number < 0)
+            System.out.println("Negative");
+        else
+            System.out.println("Zero");
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-public class positivenegative0 {
+        System.out.print("Enter number: ");
+        int number = sc.nextInt();
+        classifyNumber(number);
+    }
 }
