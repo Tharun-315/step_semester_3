@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class libraryisbm {
 
     static String normalizeCode(String raw) {
@@ -18,13 +17,15 @@ class libraryisbm {
         }
 
         for (int i = 0; i < 3; i++) {
-            if (!Character.isLetter(code.charAt(i))) {
+            if (!
+                    java.lang.Character.isLetter(code.charAt(i))) {
                 return "Invalid: publisher code must be 3 letters";
             }
         }
 
         for (int i = 3; i < 13; i++) {
-            if (!Character.isDigit(code.charAt(i))) {
+            if (!
+                    java.lang.Character.isDigit(code.charAt(i))) {
                 return "Invalid: body must contain digits";
             }
         }

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class banktransaction {
 
     static String normalizeReference(String raw) {
@@ -22,13 +21,13 @@ class banktransaction {
         }
 
         for (int i = 0; i < 3; i++) {
-            if (!Character.isLetter(reference.charAt(i))) {
+            if (!java.lang.Character.isLetter(reference.charAt(i))) {
                 return "Invalid: bank code must be 3 letters";
             }
         }
 
         for (int i = 3; i < 14; i++) {
-            if (!Character.isDigit(reference.charAt(i))) {
+            if (!java.lang.Character.isDigit(reference.charAt(i))) {
                 return "Invalid: body must contain only digits";
             }
         }
